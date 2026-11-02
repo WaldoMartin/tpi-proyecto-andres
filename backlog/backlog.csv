@@ -1,0 +1,40 @@
+﻿Summary,Description,Priority,Story Points,Sprint,Labels
+"HU-01 Como administrador del sistema, quiero gestionar usuarios y roles (vol...","Como administrador del sistema, quiero gestionar usuarios y roles (voluntariado, cocina, dirección, administración) para que cada persona acceda solo a lo que le corresponde.
+
+Criterios de aceptación: Se pueden crear, editar y desactivar usuarios. Cada usuario tiene un rol. Un voluntario no puede ver la sección de finanzas.",High,3,Sprint 1,historia-de-usuario
+"HU-02 Como voluntario, quiero registrar una donación (insumo, cantidad, fech...","Como voluntario, quiero registrar una donación (insumo, cantidad, fecha, vencimiento) para que el stock se actualice automáticamente.
+
+Criterios de aceptación: Al guardar, `Cantidad_Stock` aumenta. Los campos obligatorios se validan. El registro se completa en menos de 3 minutos.",High,5,Sprint 1,historia-de-usuario
+"HU-03 Como responsable de cocina, quiero consultar el stock disponible para...","Como responsable de cocina, quiero consultar el stock disponible para planificar el menú del día.
+
+Criterios de aceptación: El listado muestra insumo, cantidad y vencimiento. Responde en menos de 1,5 s (meta de la Entrega 2).",High,3,Sprint 1,historia-de-usuario
+"HU-04 Como voluntario, quiero dejar constancia de una donación rechazada y s...","Como voluntario, quiero dejar constancia de una donación rechazada y su motivo para mantener la trazabilidad.
+
+Criterios de aceptación: La donación queda marcada como ""rechazada"" con un motivo y no suma stock.",Medium,2,Sprint 2,historia-de-usuario
+"HU-05 Como responsable de cocina, quiero que el sistema calcule los insumos...","Como responsable de cocina, quiero que el sistema calcule los insumos necesarios para 100 raciones y me diga si alcanzan.
+
+Criterios de aceptación: Con un menú elegido, el sistema muestra el faltante por insumo, o ""stock suficiente"".",High,8,Sprint 2,historia-de-usuario
+"HU-06 Como responsable de cocina, quiero ver primero los perecederos próximo...","Como responsable de cocina, quiero ver primero los perecederos próximos a vencer para usarlos antes.
+
+Criterios de aceptación: Los insumos con vencimiento en 7 días o menos aparecen arriba y resaltados.",Medium,3,Sprint 2,historia-de-usuario
+"HU-07 Como responsable de cocina, quiero registrar la ración diaria elaborad...","Como responsable de cocina, quiero registrar la ración diaria elaborada para descontar el stock y marcar si hubo faltantes.
+
+Criterios de aceptación: Se crea un registro en `Racion_Diaria`. El stock baja según el menú. `Hubo_Faltantes` es verdadero si se elaboraron menos de 100 raciones.",High,5,Sprint 2,historia-de-usuario
+"HU-08 Como Dirección (pastores), quiero recibir una alerta cuando un insumo...","Como Dirección (pastores), quiero recibir una alerta cuando un insumo baja del mínimo para decidir a tiempo entre una campaña o una compra.
+
+Criterios de aceptación: La alerta aparece en el panel y por correo. Indica el insumo, el stock actual y el mínimo.",High,5,Sprint 3,historia-de-usuario
+"HU-09 Como Administración y Finanzas, quiero registrar las compras hechas co...","Como Administración y Finanzas, quiero registrar las compras hechas con fondos para rendir cuentas de los gastos.
+
+Criterios de aceptación: Cada compra suma stock y queda registrada con su monto, fecha y comprobante.",Medium,5,Sprint 3,historia-de-usuario
+"HU-10 Como Administración y Finanzas, quiero emitir un comprobante de agrade...","Como Administración y Finanzas, quiero emitir un comprobante de agradecimiento al donante para dar transparencia.
+
+Criterios de aceptación: Se genera un comprobante por donación con fecha, detalle y número.",Low,3,Sprint 3,historia-de-usuario
+"HU-11 Como Dirección, quiero un tablero mensual con los indicadores (racione...","Como Dirección, quiero un tablero mensual con los indicadores (raciones, quiebres de stock, donaciones, mermas) para rendir cuentas ante la congregación.
+
+Criterios de aceptación: El tablero muestra los indicadores del documento `control/indicadores.md` y se puede filtrar por mes.",Medium,8,Sprint 3,historia-de-usuario
+"DOC-01 Subir las Entregas 1, 2 y 3 al repositorio","Subir las Entregas 1, 2 y 3 al repositorio",High,,Entrega 4,documentacion
+DOC-02 Modelar el proceso de negocio en BPMN,Modelar el proceso de negocio en BPMN,High,,Entrega 4,documentacion
+DOC-03 Redactar las historias de usuario y armar el tablero,Redactar las historias de usuario y armar el tablero,High,,Entrega 4,documentacion
+DOC-04 Definir los indicadores de control,Definir los indicadores de control,High,,Entrega 4,documentacion
+DOC-05 Redactar la declaración de uso de IA,Redactar la declaración de uso de IA,High,,Entrega 4,documentacion
+DOC-06 Integrar el PDF final y revisar los enlaces,Integrar el PDF final y revisar los enlaces,High,,Entrega 4,documentacion
